@@ -92,7 +92,7 @@ button {
   cursor: pointer;
 }
 
-h1, h2, h3 {
+h1, h2, h3{
   color: var(--color-texto-titulos);
   font-weight: var(--texto-peso-normal);
 }
@@ -109,7 +109,7 @@ h1, h2, h3 {
 
 .titulo-seccion__fina {
   display: block;
-  font-weight: var(--texto-peso-fino);
+  font-weight: var(--texto-peso-normal);
 }
 
 .titulo-seccion__gruesa {
