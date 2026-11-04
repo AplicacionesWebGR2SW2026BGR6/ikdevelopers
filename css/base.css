@@ -3,7 +3,7 @@
 
     --color-boton-azul: #3D63EA;
 
-    --degradado-product: linear-gradient(180deg, #DE4396 0%, rgba(13, 28, 159, 0) 100%);
+    --degradado-product: linear-gradient(180deg, #DE4396 0%, #8E66B8 100%);
     --degradado-teams:   linear-gradient(225deg, #F7666F 0%, #406AFF 100%);
     --degradado-boton:   linear-gradient(225deg, #6675F7 0%, #57007B 100%);
 
@@ -33,6 +33,7 @@
     --texto-peso-normal:  400;
     --texto-peso-medio:   600;
     --texto-peso-negrita: 700;
+    --texto-peso-extranegrita: 800;
 
     --texto-interlineado-normal: 1.57;
     --texto-interlineado-largo: 2;
@@ -92,7 +93,7 @@ button {
   cursor: pointer;
 }
 
-h1, h2, h3 {
+h1, h2, h3{
   color: var(--color-texto-titulos);
   font-weight: var(--texto-peso-normal);
 }
@@ -109,7 +110,7 @@ h1, h2, h3 {
 
 .titulo-seccion__fina {
   display: block;
-  font-weight: var(--texto-peso-fino);
+  font-weight: var(--texto-peso-normal);
 }
 
 .titulo-seccion__gruesa {

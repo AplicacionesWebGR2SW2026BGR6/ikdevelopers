@@ -7,7 +7,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
@@ -23,10 +24,10 @@
     <!-- =====================================================
        HEADER — Bryan Ayala
        ===================================================== -->
-    <header>
-        <p>Ik developers</p>
+    <header class="header__barra header__barra--sombra header__fila header__fila--separada">
+        <p class="header__logo">Ik developers</p>
         <nav>
-            <ul>
+            <ul class="header__menu header__fila header__fila--separada">
                 <li><a href="index.html">About us</a></li>
                 <li><a href="index.html">Services</a></li>
                 <li><a href="index.html">Case Studies</a></li>
@@ -35,63 +36,118 @@
                 <li><a href="index.html">Hire</a></li>
             </ul>
         </nav>
-        <button type="button">Contact us</button>
+        <button class="btn btn--morado header__boton" type="button">Contact us</button>
     </header>
     <!-- FIN HEADER -->
 
     <main>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- =====================================================
          HERO — Bryan Ayala
          ===================================================== -->
-        <section>
-            <h1>Great <span>Product</span> is <span>built by great</span> <span>teams</span></h1>
-            <p>We help build and manage a team of world-class developers to bring your vision to life</p>
-            <button type="button">Let’s get started!</button>
+        <section class="hero hero__fila">
+            <div class="hero__contenido hero__contenido--columna">
+            
+            <div>
+                <h1 class="titulo-seccion__fina hero__titulo">
+                    Great <span class="hero__texto-degradado hero__texto-degradado--product">
+                    Product</span> 
+                    is <span class="titulo-seccion__gruesa hero__titulo-gruesa">
+                    built by great <span class="hero__texto-degradado hero__texto-degradado--teams">
+                    teams</span></span></h1>
+
+                <p class="hero__descripcion hero__descripcion--espaciado">We help build and manage a team of world-class developers <br>to bring your vision to life</p>
+            </div>
+
+            <button class="btn btn--azul hero__boton" type="button">Let’s get started!</button>
+            </div>
+            <img class="hero__imagen" src="https://picsum.photos/id/60/614/546" alt="hero image">
+
         </section>
         <!-- FIN HERO -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- =====================================================
          CLIENTES (testimonios) — Lenin Jeréz
          ===================================================== -->
-        <section>
-            <h2>Why customers love <span>working with us</span></h2>
-            <blockquote>Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve came across so far. Wouldn’t be hesitated to introduce their work to someone else.</blockquote>
-            <div>
+        <section class="clientes">
+            <h2 class="clientes__titulo">Why customers love <span class="clientes__titulo-gruesa">working with us</span></h2>
+            <blockquote class="clientes__testimonio">Without any doubt I recommend Alcaline Solutions as one of the best web design and digital marketing agencies. One of the best agencies I’ve came across so far. Wouldn’t be hesitated to introduce their work to someone else.</blockquote>
+            <div class="clientes__carrusel">
 
-                <button type="button">&larr;</button>
-                <ul>
-                    <li>
-                        <span aria-label="5 de 5 estrellas">★★★★★</span>
-                        <h2>Romeena De Silva</h2>
-                        <p>Janet Cosmetics</p>
-                    </li>
-                    
-                    <li>
-                        <span aria-label="5 de 5 estrellas">★★★★★</span>
-                        <h2>Romeena De Silva</h2>
-                        <p>Janet Cosmetics</p>
-                    </li>
-                    
-                    <li>
-                        <span aria-label="5 de 5 estrellas">★★★★★</span>
-                        <h2>Imran Khan</h2>
-                        <p>Software Engineer</p>
-                    </li>
-                    
-                    <li>
-                        <span aria-label="5 de 5 estrellas">★★★★★</span>
-                        <h2>Romeena De Silva</h2>
-                        <p>Janet Cosmetics</p>
+                <button class="clientes__flecha" type="button" aria-label="Anterior"><i class="fa-solid fa-arrow-left"></i></button>
+                <ul class="clientes__lista">
+                    <li class="clientes__persona clientes__persona--foto-1">
+                        <span class="clientes__estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+                        <h3 class="clientes__nombre">Romeena De Silva</h3>
+                        <p class="clientes__cargo">Janet Cosmetics</p>
                     </li>
 
-                    <li>
-                        <span aria-label="5 de 5 estrellas">★★★★★</span>
-                        <h2>Romeena De Silva</h2>
-                        <p>Janet Cosmetics</p>
+                    <li class="clientes__persona clientes__persona--foto-2">
+                        <span class="clientes__estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+                        <h3 class="clientes__nombre">Romeena De Silva</h3>
+                        <p class="clientes__cargo">Janet Cosmetics</p>
+                    </li>
+
+                    <li class="clientes__persona clientes__persona--foto-3 clientes__persona--destacada">
+                        <span class="clientes__estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+                        <h3 class="clientes__nombre">Imran Khan</h3>
+                        <p class="clientes__cargo">Software Engineer</p>
+                    </li>
+
+                    <li class="clientes__persona clientes__persona--foto-4">
+                        <span class="clientes__estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+                        <h3 class="clientes__nombre">Romeena De Silva</h3>
+                        <p class="clientes__cargo">Janet Cosmetics</p>
+                    </li>
+
+                    <li class="clientes__persona clientes__persona--foto-5">
+                        <span class="clientes__estrellas" role="img" aria-label="5 de 5 estrellas">★★★★★</span>
+                        <h3 class="clientes__nombre">Romeena De Silva</h3>
+                        <p class="clientes__cargo">Janet Cosmetics</p>
                     </li>
                 </ul>
-                <button type="button">&rarr;</button>
+                <button class="clientes__flecha" type="button" aria-label="Siguiente"><i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </section>
 
@@ -101,165 +157,164 @@
         <!-- =====================================================
          ENFOQUE (development approach) — Juan Chugá
          ===================================================== -->
-        <section>
-            <h2>Our design and <span>development approach</span></h2>
-            <ul>
-                <li>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h4>UX Driven Engineering</h4>
-                        <p>Unlike other companies, we are a <span>UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
-                    </div>
-                </li>
+        <section class="enfoque__seccion">
+            <h2 class="enfoque__titulo titulo-seccion__fina titulo-seccion">Our design and <span class="titulo-seccion__gruesa">development approach</span></h2>
+            <div class="container">
+                <ul class="enfoque__cuadricula">
+                    <li class="enfoque__tarjeta enfoque__tarjeta--oscuro">
+                        <div class="enfoque__icono">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <div>
+                            <h3 class="enfoque__tarjeta__titulo">UX Driven Engineering</h3>
+                            <p>Unlike other companies, we are a <span class="enfoque__resaltado">UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
+                        </div>
+                    </li>
 
-                <li>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h4>Developing Shared Understanding</h4>
-                        <p>Unlike other companies, we are a <span>UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
-                    </div>
-                </li>
+                    <li class="enfoque__tarjeta enfoque__tarjeta--azul">
+                        <div class="enfoque__icono">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div>
+                            <h3 class="enfoque__tarjeta__titulo">Developing Shared Understanding</h3>
+                            <p>Unlike other companies, we are a <span class="enfoque__resaltado">UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
+                        </div>
+                    </li>
 
-                <li>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h4>Proven Experience and Expertise</h4>
-                        <p>Unlike other companies, we are a <span>UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
-                    </div>
-                </li>
+                    <li class="enfoque__tarjeta enfoque__tarjeta--rosa">
+                        <div class="enfoque__icono">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div>
+                            <h3 class="enfoque__tarjeta__titulo">Proven Experience and Expertise</h3>
+                            <p>Unlike other companies, we are a <span class="enfoque__resaltado">UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
+                        </div>
+                    </li>
 
-                <li>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h4>Security &amp; Intellectual Property (IP)</h4>
-                        <p>Unlike other companies, we are a <span>UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
-                    </div>
-                </li>
+                    <li class="enfoque__tarjeta enfoque__tarjeta--verde">
+                        <div class="enfoque__icono">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <h3 class="enfoque__tarjeta__titulo">Security &amp; Intellectual Property (IP)</h3>
+                            <p>Unlike other companies, we are a <span class="enfoque__resaltado">UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
+                        </div>
+                    </li>
 
-                <li>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h4>Code Reviews</h4>
-                        <p>Unlike other companies, we are a <span>UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
-                    </div>
-                </li>
+                    <li class="enfoque__tarjeta enfoque__tarjeta--amarillo">
+                        <div class="enfoque__icono">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div>
+                            <h3 class="enfoque__tarjeta__titulo">Code Reviews</h3>
+                            <p>Unlike other companies, we are a <span class="enfoque__resaltado">UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
+                        </div>
+                    </li>
 
-                <li>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <h4>Quality Assurance &amp; Testing</h4>
-                        <p>Unlike other companies, we are a <span>UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
-                    </div>
-                </li>
-                
-            </ul>   
+                    <li class="enfoque__tarjeta enfoque__tarjeta--violeta">
+                        <div class="enfoque__icono">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div>
+                            <h3 class="enfoque__tarjeta__titulo">Quality Assurance &amp; Testing</h3>
+                            <p>Unlike other companies, we are a <span class="enfoque__resaltado">UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
+                        </div>
+                    </li>
+                    
+                </ul>  
+            </div> 
         </section>
         <!-- FIN ENFOQUE -->
 
 
         <!-- =====================================================
-         RECURSOS — Eliana 
+         RECURSOS — Eliana
          ===================================================== -->
-        <section>
-            <h2>Featured <span>Resources</span></h2>
+        <section class="recursos__seccion">
+            <h2 class="recursos__titulo titulo-seccion__fina titulo-seccion">Featured <span class="titulo-seccion__gruesa">Resources</span></h2>
 
-            <div>
-                <ul>
-                    <li>
-                        <img src="" alt="">
-                        <h6>How to Build a Scalable Application up to 1 Million Users on AWS</h6>
-                        <div>
-                            <h6>Read More</h6>
-                            <button type="button"><span>&rarr;</span></button>
+            <div class="container recursos__contenedor">
+                <ul class="recursos__cuadricula">
+                    <li class="recursos__tarjeta">
+                        <img class="recursos__imagen" src="https://picsum.photos/id/1/508/350" alt="Laptop con código en pantalla">
+                        <h3 class="recursos__nombre">How to Build a Scalable Application up to 1 Million Users on AWS</h3>
+                        <div class="recursos__enlace">
+                            <span class="recursos__leer-mas">Read More</span>
+                            <button class="recursos__boton" type="button"><span class="recursos__flecha">&rarr;</span></button>
                         </div>
                     </li>
 
-                    <li>
-                        <img src="" alt="">
-                        <h6>How to Build a Scalable Application up to 1 Million Users on AWS</h6>
-                        <div>
-                            <h6>Read More</h6>
-                            <button type="button"><span>&rarr;</span></button>
+                    <li class="recursos__tarjeta">
+                        <img class="recursos__imagen" src="https://picsum.photos/id/2/508/350" alt="Pantalla con código y teléfono sobre un teclado">
+                        <h3 class="recursos__nombre">How to Build a Scalable Application up to 1 Million Users on AWS</h3>
+                        <div class="recursos__enlace">
+                            <span class="recursos__leer-mas">Read More</span>
+                            <button class="recursos__boton" type="button"><span class="recursos__flecha">&rarr;</span></button>
                         </div>
                     </li>
 
-                    <li>
-                        <img src="" alt="">
-                        <h6>How to Build a Scalable Application up to 1 Million Users on AWS</h6>
-                        <div>
-                            <h6>Read More</h6>
-                            <button type="button"><span>&rarr;</span></button>
+                    <li class="recursos__tarjeta">
+                        <img class="recursos__imagen" src="https://picsum.photos/id/532/508/350" alt="Laptop y cuaderno sobre un escritorio de madera">
+                        <h3 class="recursos__nombre">How to Build a Scalable Application up to 1 Million Users on AWS</h3>
+                        <div class="recursos__enlace">
+                            <span class="recursos__leer-mas">Read More</span>
+                            <button class="recursos__boton" type="button"><span class="recursos__flecha">&rarr;</span></button>
                         </div>
                     </li>
 
-                    <li>
-                        <img src="" alt="">
-                        <h6>How to Build a Scalable Application up to 1 Million Users on AWS</h6>
-                        <div>
-                            <h6>Read More</h6>
-                            <button type="button"><span>&rarr;</span></button>
+                    <li class="recursos__tarjeta">
+                        <img class="recursos__imagen" src="https://picsum.photos/id/6/508/350" alt="Monitor con código en un escritorio oscuro">
+                        <h3 class="recursos__nombre">How to Build a Scalable Application up to 1 Million Users on AWS</h3>
+                        <div class="recursos__enlace">
+                            <span class="recursos__leer-mas">Read More</span>
+                            <button class="recursos__boton" type="button"><span class="recursos__flecha">&rarr;</span></button>
                         </div>
                     </li>
                 </ul>
             </div>
-
         </section>
-        <!-- FIN RECURSOS -->
 
     </main>
     <!-- =====================================================
        FOOTER — Eliana
        ===================================================== -->
     <footer>
-        <section>
-            <div>
+        <section class="footer__seccion">
+            <div class="container footer__contenido">
                 <div>
-                    <h5>Ik developers</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    <p class="footer__titulo footer__titulo--marca">Ik developers</p>
+                    <p class="footer__descripcion">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
                 </div>
 
                 <div>
-                    <h5>Links</h5>
-                    <ul>
-                        <li><a href="index.html">About Us</a></li>
-                        <li><a href="index.html">Services</a></li>
-                        <li><a href="index.html">Case Studies</a></li>
-                        <li><a href="index.html">How it Works</a></li>
-                        <li><a href="index.html">Blog</a></li>
-                        <li><a href="index.html">Careers</a></li>
-                        <li><a href="index.html">Areas We Serve</a></li>
+                    <h2 class="footer__titulo">Links</h2>
+                    <ul class="footer__lista">
+                        <li><a class="footer__enlace" href="index.html">About Us</a></li>
+                        <li><a class="footer__enlace" href="index.html">Services</a></li>
+                        <li><a class="footer__enlace" href="index.html">Case Studies</a></li>
+                        <li><a class="footer__enlace" href="index.html">How it Works</a></li>
+                        <li><a class="footer__enlace" href="index.html">Blog</a></li>
+                        <li><a class="footer__enlace" href="index.html">Careers</a></li>
+                        <li><a class="footer__enlace" href="index.html">Areas We Serve</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h5>Contact us</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <p>+923183561921</p>
+                    <h2 class="footer__titulo">Contact us</h2>
+                    <p class="footer__descripcion footer__descripcion--contacto">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p class="footer__descripcion footer__telefono">+923183561921</p>
                 </div>
 
-                <div>
-                    <a href="index.html" aria-label="Facebook">f</a>
-                    <a href="index.html" aria-label="Instagram">ig</a>
-                    <a href="index.html" aria-label="Twitter">tw</a>
-                    <a href="index.html" aria-label="LinkedIn">in</a>
+                <div class="footer__redes">
+                    <a class="footer__red" href="index.html" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="footer__red" href="index.html" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="footer__red" href="index.html" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="footer__red" href="index.html" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
         </section>
-        <p>© 2023 Copyright by IK Developers. All rights reserved.</p>
+        <p class="footer__copyright">© 2023 Copyright by IK Developers. All rights reserved.</p>
     </footer>
-    <!-- FIN FOOTER -->
 
 </body>
 </html>

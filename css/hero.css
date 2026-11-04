@@ -1,0 +1,85 @@
+:root {
+  --hero-alto: 34.125rem;                   /* 546px */
+  --hero-margen-superior: 4.0625rem;        /* 65px */
+  --hero-margen-derecho: 8.125rem;          /* 130px */
+  --hero-margen-inferior: 7.25rem;          /* 116px */
+  --hero-margen-izquierdo: 10.3125rem;      /* 165px */
+  --hero-contenido-ancho: 33.1875rem;       /* 531px */
+  --hero-contenido-alto: 22.1875rem;        /* 355px */
+  --hero-titulo-gruesa: 3.25rem;            /* 52px */
+  --hero-descripcion-espacio-superior: 1.75rem;   /* 28px */
+  --hero-descripcion-espacio-inferior: 4.6875rem; /* 75px */
+  --hero-boton-ancho: 10.9375rem;           /* 175px */
+  --hero-boton-alto: 3.25rem;               /* 52px */
+  --hero-imagen-ancho: 38.375rem;           /* 614px */
+}
+
+.hero {
+  height: var(--hero-alto);
+  margin: var(--hero-margen-superior) var(--hero-margen-derecho) var(--hero-margen-inferior) var(--hero-margen-izquierdo);
+}
+
+.hero__fila {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__contenido {
+  width: var(--hero-contenido-ancho);
+  height: var(--hero-contenido-alto);
+}
+
+.hero__contenido--columna {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__titulo {
+  font-weight: var(--texto-peso-fino);
+  font-size: var(--titulo-hero);
+}
+
+.hero__titulo-gruesa {
+  font-size: var(--hero-titulo-gruesa);
+  font-weight: var(--texto-peso-extranegrita);
+}
+
+.hero__texto-degradado {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.hero__texto-degradado--product {
+  background-image: var(--degradado-product);
+  font-weight: var(--texto-peso-negrita);
+}
+
+.hero__texto-degradado--teams {
+  background-image: var(--degradado-teams);
+  background-size: 175% 250%;
+}
+
+.hero__descripcion {
+  font-size: var(--texto-md);
+  line-height: var(--texto-interlineado-largo);
+}
+
+.hero__descripcion--espaciado {
+  padding-top: var(--hero-descripcion-espacio-superior);
+  padding-bottom: var(--hero-descripcion-espacio-inferior);
+}
+
+.hero__boton {
+  width: var(--hero-boton-ancho);
+  height: var(--hero-boton-alto);
+}
+
+.hero__imagen {
+  width: var(--hero-imagen-ancho);
+  height: var(--hero-alto);
+  flex-shrink: 0;
+}
