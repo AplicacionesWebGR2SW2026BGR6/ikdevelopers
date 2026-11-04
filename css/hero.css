@@ -37,6 +37,7 @@
 }
 
 .hero__titulo {
+  font-weight: var(--texto-peso-fino);
   font-size: var(--titulo-hero);
 }
 
