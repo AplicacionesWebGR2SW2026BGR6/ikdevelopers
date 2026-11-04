@@ -76,6 +76,9 @@
 .hero__boton {
   width: var(--hero-boton-ancho);
   height: var(--hero-boton-alto);
+  align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .hero__imagen {
