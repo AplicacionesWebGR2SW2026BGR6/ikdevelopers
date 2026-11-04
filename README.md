@@ -2,7 +2,7 @@
 
 Landing page de la empresa de desarrollo de software **IK Developers**, construida con HTML y CSS a partir de una muestra en Figma. Deber grupal de Aplicaciones Web.
 
-- **Página publicada:** `[<URL de GitHub Pages>](https://aplicacioneswebgr2sw2026bgr6.github.io/ikdevelopers/)`
+- **Página publicada:** `https://aplicacioneswebgr2sw2026bgr6.github.io/ikdevelopers/`
 
 ## Estructura de directorios y archivos
 
