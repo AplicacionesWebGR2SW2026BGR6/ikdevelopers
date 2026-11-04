@@ -7,7 +7,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
@@ -23,10 +23,10 @@
     <!-- =====================================================
        HEADER — Bryan Ayala
        ===================================================== -->
-    <header>
-        <p>Ik developers</p>
+    <header class="header__barra header__barra--sombra header__fila header__fila--separada">
+        <p class="header__logo">Ik developers</p>
         <nav>
-            <ul>
+            <ul class="header__menu header__fila header__fila--separada">
                 <li><a href="index.html">About us</a></li>
                 <li><a href="index.html">Services</a></li>
                 <li><a href="index.html">Case Studies</a></li>
@@ -35,21 +35,76 @@
                 <li><a href="index.html">Hire</a></li>
             </ul>
         </nav>
-        <button type="button">Contact us</button>
+        <button class="btn btn--morado header__boton" type="button">Contact us</button>
     </header>
     <!-- FIN HEADER -->
 
     <main>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- =====================================================
          HERO — Bryan Ayala
          ===================================================== -->
-        <section>
-            <h1>Great <span>Product</span> is <span>built by great</span> <span>teams</span></h1>
-            <p>We help build and manage a team of world-class developers to bring your vision to life</p>
-            <button type="button">Let’s get started!</button>
+        <section class="hero hero__fila">
+            <div class="hero__contenido hero__contenido--columna">
+            
+            <div>
+                <h1 class="titulo-seccion__fina hero__titulo">
+                    Great <span class="hero__texto-degradado hero__texto-degradado--product">
+                    Product</span> 
+                    is <span class="titulo-seccion__gruesa hero__titulo-gruesa">
+                    built by great <span class="hero__texto-degradado hero__texto-degradado--teams">
+                    teams</span></span></h1>
+
+                <p class="hero__descripcion hero__descripcion--espaciado">We help build and manage a team of world-class developers <br>to bring your vision to life</p>
+            </div>
+
+            <button class="btn btn--azul hero__boton" type="button">Let’s get started!</button>
+            </div>
+            <img class="hero__imagen" src="https://picsum.photos/id/60/614/546" alt="hero image">
+
         </section>
         <!-- FIN HERO -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- =====================================================
          CLIENTES (testimonios) — Lenin Jeréz
@@ -66,19 +121,19 @@
                         <h2>Romeena De Silva</h2>
                         <p>Janet Cosmetics</p>
                     </li>
-                    
+
                     <li>
                         <span aria-label="5 de 5 estrellas">★★★★★</span>
                         <h2>Romeena De Silva</h2>
                         <p>Janet Cosmetics</p>
                     </li>
-                    
+
                     <li>
                         <span aria-label="5 de 5 estrellas">★★★★★</span>
                         <h2>Imran Khan</h2>
                         <p>Software Engineer</p>
                     </li>
-                    
+
                     <li>
                         <span aria-label="5 de 5 estrellas">★★★★★</span>
                         <h2>Romeena De Silva</h2>
@@ -163,14 +218,14 @@
                         <p>Unlike other companies, we are a <span>UX first</span> development company. Projects are driven by designers and they make sure design and experiences translate to code.</p>
                     </div>
                 </li>
-                
-            </ul>   
+
+            </ul>
         </section>
         <!-- FIN ENFOQUE -->
 
 
         <!-- =====================================================
-         RECURSOS — Eliana 
+         RECURSOS — Eliana
          ===================================================== -->
         <section>
             <h2>Featured <span>Resources</span></h2>
