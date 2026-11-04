@@ -1,9 +1,3 @@
-:root{
-
-    --degradado-UX-driven: linear-gradient(225deg, #29272E 0%, #27272E 100%);
-
-}
-
 .enfoque__seccion{
     --enfoque-color-tarjeta: #FAFAFA;
     background-color: var(--color-fondo-2);
@@ -36,7 +30,7 @@
 
 .enfoque__tarjeta__titulo{
     color: var(--color-texto-titulos);
-    margin-bottom: 9px;
+    margin-bottom: 0.5625rem; /* 9px */
     font-size: var(--texto-lg);
     font-weight: var(--texto-peso-medio);
 }

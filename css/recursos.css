@@ -1,5 +1,6 @@
 .recursos__seccion {
-    padding-top: 1.375rem;;
+    --recursos-peso-texto: 500;
+    padding-top: 1.375rem;
     padding-bottom: 3.8825rem;
 }
 
@@ -33,7 +34,7 @@
 .recursos__nombre {
     margin-top: 1.25rem;
     font-size: var(--texto-base);
-    font-weight: var(--texto-peso-normal);
+    font-weight: var(--recursos-peso-texto);
     line-height: var(--texto-interlineado-normal);
     color: var(--color-texto-recursos);
 }
@@ -49,7 +50,7 @@
 
 .recursos__leer-mas {
     font-size: var(--texto-base);
-    font-weight: var(--texto-peso-normal);
+    font-weight: var(--recursos-peso-texto);
     line-height: var(--texto-interlineado-normal);
 }
 

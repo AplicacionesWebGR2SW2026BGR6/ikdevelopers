@@ -1,14 +1,14 @@
 /* Contenedor principal */
-main > section:nth-of-type(2) {
+.clientes {
     width: 100%;
     min-height: 56.25rem;
-    padding: 9.5rem 3.75rem 3.75rem;
+    padding: 9.5rem 4.9375rem 3.75rem; /* 152px 79px 60px */
     background-color: var(--color-fondo-1);
     text-align: center;
 }
 
 /* Título principal */
-main > section:nth-of-type(2) > h2 {
+.clientes__titulo {
     max-width: 29.625rem; /* 474px */
     margin: 0 auto;
     color: var(--color-texto-titulos);
@@ -19,13 +19,13 @@ main > section:nth-of-type(2) > h2 {
 }
 
 /* Segunda línea del título */
-main > section:nth-of-type(2) > h2 span {
+.clientes__titulo-gruesa {
     display: block;
     font-weight: var(--texto-peso-negrita);
 }
 
 /* Testimonio principal */
-main > section:nth-of-type(2) > blockquote {
+.clientes__testimonio {
     width: 33.4375rem; /* 535px */
     max-width: 100%;
     min-height: 11.3125rem; /* 181px */
@@ -40,9 +40,9 @@ main > section:nth-of-type(2) > blockquote {
 }
 
 /* Contenedor de flechas y clientes */
-main > section:nth-of-type(2) > div {
+.clientes__carrusel {
     display: grid;
-    grid-template-columns: 3.25rem minmax(0, 1fr) 3.25rem;
+    grid-template-columns: 2.8125rem minmax(0, 1fr) 2.8125rem; /* 45px */
     align-items: start;
     gap: 2rem;
     max-width: 88rem;
@@ -50,17 +50,17 @@ main > section:nth-of-type(2) > div {
 }
 
 /* Botones de navegación */
-main > section:nth-of-type(2) > div > button {
+.clientes__flecha {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3.25rem;
-    height: 3.25rem;
+    width: 2.8125rem; /* 45px */
+    height: 2.8125rem;
     border: 2px solid var(--color-marca-1);
     border-radius: var(--radio-circulo);
     color: var(--color-marca-1);
     background-color: var(--color-fondo-1);
-    font-size: 1.75rem;
+    font-size: 1.0625rem; /* 17px, la flecha de figma mide 15px */
     line-height: 1;
     cursor: pointer;
     transition: background-color 0.2s ease,
@@ -68,19 +68,19 @@ main > section:nth-of-type(2) > div > button {
 }
 
 /* Efecto de las flechas */
-main > section:nth-of-type(2) > div > button:hover {
+.clientes__flecha:hover {
     background-color: var(--color-marca-1);
     color: var(--color-fondo-1);
 }
 
 /* Accesibilidad con teclado */
-main > section:nth-of-type(2) > div > button:focus-visible {
+.clientes__flecha:focus-visible {
     outline: 3px solid var(--color-marca-1);
     outline-offset: 4px;
 }
 
 /* Grupo de los cinco clientes */
-main > section:nth-of-type(2) > div > ul {
+.clientes__lista {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -93,7 +93,7 @@ main > section:nth-of-type(2) > div > ul {
 }
 
 /* Contenedor individual de cliente */
-main > section:nth-of-type(2) > div > ul > li {
+.clientes__persona {
     display: flex;
     flex: 0 0 7.5625rem;
     flex-direction: column;
@@ -103,7 +103,7 @@ main > section:nth-of-type(2) > div > ul > li {
 }
 
 /* Fotografías circulares */
-main > section:nth-of-type(2) > div > ul > li::before {
+.clientes__persona::before {
     content: "";
     display: block;
     flex-shrink: 0;
@@ -118,32 +118,32 @@ main > section:nth-of-type(2) > div > ul > li::before {
 }
 
 /* Cliente 1 */
-main > section:nth-of-type(2) > div > ul > li:nth-child(1)::before {
+.clientes__persona--foto-1::before {
     background-image: url("https://picsum.photos/id/1005/200/200");
 }
 
 /* Cliente 2 */
-main > section:nth-of-type(2) > div > ul > li:nth-child(2)::before {
+.clientes__persona--foto-2::before {
     background-image: url("https://picsum.photos/id/1027/200/200");
 }
 
 /* Cliente 3 - Destacado */
-main > section:nth-of-type(2) > div > ul > li:nth-child(3)::before {
+.clientes__persona--foto-3::before {
     background-image: url("https://picsum.photos/id/1/240/240");
 }
 
 /* Cliente 4 */
-main > section:nth-of-type(2) > div > ul > li:nth-child(4)::before {
+.clientes__persona--foto-4::before {
     background-image: url("https://picsum.photos/id/856/200/200");
 }
 
 /* Cliente 5 */
-main > section:nth-of-type(2) > div > ul > li:nth-child(5)::before {
+.clientes__persona--foto-5::before {
     background-image: url("https://picsum.photos/id/883/200/200");
 }
 
 /* Estrellas de valoración */
-main > section:nth-of-type(2) > div > ul > li > span {
+.clientes__estrellas {
     display: block;
     width: 100%;
     color: #F4CE4A;
@@ -154,7 +154,7 @@ main > section:nth-of-type(2) > div > ul > li > span {
 }
 
 /* Nombres de los clientes */
-main > section:nth-of-type(2) > div > ul > li > h2 {
+.clientes__nombre {
     width: 100%;
     margin-top: 0.5rem;
     color: var(--color-texto-gris);
@@ -166,7 +166,7 @@ main > section:nth-of-type(2) > div > ul > li > h2 {
 }
 
 /* Empresa o profesión */
-main > section:nth-of-type(2) > div > ul > li > p {
+.clientes__cargo {
     margin-top: 0.125rem;
     color: var(--color-texto-gris);
     font-size: 0.75rem; /* 12px */
@@ -177,12 +177,12 @@ main > section:nth-of-type(2) > div > ul > li > p {
 }
 
 /* Cliente central destacado */
-main > section:nth-of-type(2) > div > ul > li:nth-child(3) {
+.clientes__persona--destacada {
     transform: translateY(-1.25rem);
 }
 
 /* Fotografía central */
-main > section:nth-of-type(2) > div > ul > li:nth-child(3)::before {
+.clientes__persona--destacada::before {
     width: 6.25rem; /* 100px */
     height: 6.25rem;
     margin-bottom: 0.625rem;
@@ -190,7 +190,7 @@ main > section:nth-of-type(2) > div > ul > li:nth-child(3)::before {
 }
 
 /* Nombre del cliente destacado */
-main > section:nth-of-type(2) > div > ul > li:nth-child(3) > h2 {
+.clientes__persona--destacada .clientes__nombre {
     color: var(--color-marca-1);
     font-size: var(--texto-md);
     font-weight: var(--texto-peso-negrita);
@@ -198,7 +198,7 @@ main > section:nth-of-type(2) > div > ul > li:nth-child(3) > h2 {
 }
 
 /* Profesión del cliente destacado */
-main > section:nth-of-type(2) > div > ul > li:nth-child(3) > p {
+.clientes__persona--destacada .clientes__cargo {
     color: var(--color-texto-titulos);
     font-size: var(--texto-sm);
     opacity: 1;
